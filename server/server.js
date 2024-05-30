@@ -59,8 +59,9 @@ let timer = new Map();
 
 const server = http.createServer(app);
 const io = new Server(server, {
+  path:"",
   cors: {
-    origin:"*",
+    origin: "*",
     methods: ["GET", "POST"],
   },
   secure : true
